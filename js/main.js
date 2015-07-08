@@ -1,3 +1,4 @@
+var gui = require('nw.gui');
 var file = require('file.js');
 
 function clickInput(id) {
@@ -11,7 +12,9 @@ document.addEventListener('keyup', function (e) {
 		clickInput('open');
 	} else if (e.keyCode == 'S'.charCodeAt(0) && e.ctrlKey) {
 		clickInput('save');
-	}
+	} else if (e.keyCode == 'N'.charCodeAt(0) && e.ctrlKey) {
+	gui.Window.open('index.html');
+    }
 });
 
 //if(document.getElementById('open')){
