@@ -1,5 +1,3 @@
-var fs = require('fs');
+var file = require('file.js');
 
-fs.readFile('./package.json', 'utf-8', function (error, contents) {
-	document.write(contents);
-});
+console.log(file.open, file.save);
